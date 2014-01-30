@@ -56,7 +56,9 @@ void setup() {
 
   
   //set up the HW UART to communicate with the BT module
-  Serial.begin(115200); // initialization baudrate
+  
+  // initialization baudrate. Different FA devices use different baudrates
+  Serial.begin(115200);
 
   pinMode(A3_PIN, INPUT); // set as input to detect voltage - values
   pinMode(A7_PIN, INPUT); // set as input to detect voltage - touched/untouched

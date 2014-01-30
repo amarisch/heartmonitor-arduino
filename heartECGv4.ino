@@ -56,7 +56,6 @@ void setup() {
 
   
   //set up the HW UART to communicate with the BT module
-  
   // initialization baudrate. Different FA devices use different baudrates
   Serial.begin(115200);
 
